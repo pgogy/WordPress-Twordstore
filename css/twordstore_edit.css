@@ -1,0 +1,99 @@
+div.twordstore_tweet_holder{
+
+	height:400px;
+	overflow:scroll;
+	
+}
+
+div.twordstore_tweet, div.twordstore_tweet_public{
+
+	clear:left;
+	width:100%;
+	margin:5px;
+
+}
+
+div.twordstore_tweet_public{
+
+	float:left;
+	position:relative;
+	margin:0 10px;
+
+}
+
+div.twordstore_tweet_checkbox{
+
+	float:left;
+	position:relative;
+	width:5%;
+	
+}
+
+div.twordstore_tweet_profile{
+
+	float:left;
+	position:relative;
+	text-align:center;
+	width:8%;
+	
+}
+
+div.twordstore_tweet_profile_public{
+
+	float:left;
+	position:relative;
+	text-align:center;
+	width:20%;
+	
+}
+
+div.twordstore_tweet_profile_editor{
+
+	float:left;
+	position:relative;
+	text-align:center;
+	width:15%;
+	
+}
+
+div.twordstore_tweet_text{
+
+	float:left;
+	position:relative;
+	width:85%;
+
+}
+
+div.twordstore_tweet_text_public{
+
+	float:left;
+	position:relative;
+	width:80%;
+}
+
+div.twordstore_tweet_text_editor{
+
+	float:left;
+	position:relative;
+	width:80%;
+	
+}
+
+div.twordstore_tweet_profile p, div.twordstore_tweet_text p, div.twordstore_tweet_profile_public p, div.twordstore_tweet_text_public p, div.twordstore_tweet_text_editor p{
+
+	margin-top:0;
+
+}
+
+div.twordstore_tweet_profile_public p, div.twordstore_tweet_text_public p{
+
+	margin-bottom:0;
+
+}
+
+div#twordstore_update{
+
+	cursor:pointer;
+	cursor:hand;
+
+}
