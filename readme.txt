@@ -3,7 +3,7 @@ Contributors: pgogy
 Tags: twitter, storage, tweet, twitter timeline
 Requires at least: 3.1
 Tested up to: 3.3
-Stable tag: 0.1
+Stable tag: 0.15
 
 Twordstore is a plugin designed to allow for user's tweets or twitter searches to be harvested and displayed via WordPress.
 
@@ -25,10 +25,18 @@ Each tweet which is recorded can then also be displayed in any blog post or page
 No Questions have been asked yet. Please see http://www.pgogy.com/code/xerte-online/
 
 == Screenshots ==
+1. How to find TwordStore creation on the menu
+2. A twordstore being created
+3. Adding a twordstore shortcode
+4. Using the twordstore tweet picker
+5. A twordstore archive post
 
 Will update soon
 
 == Changelog ==
+
+= 0.15 =
+A few bug fixes and screen shots. Bugs to http://www.pgogy.com/code/twordstore/ please
 
 = 0.1 =
 First version released. Still a development version. I expect it to work, but problems may occur. Please report to http://www.pgogy.com/code/twordstore/

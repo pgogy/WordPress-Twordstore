@@ -4,7 +4,7 @@ add_action("admin_menu", "twordstore_editor_make");
 
 add_action('save_post','twordstore_post');
 
-add_action('wp_default_styles', 'twordstore_load_styles');
+add_action('admin_init', 'twordstore_load_styles');
 
 function twordstore_editor_make()
 {
@@ -215,18 +215,26 @@ function twordstore_tweets_list(){
 
 function twordstore_post(){
 
-	// if this fails, check_admin_referer() will automatically print a "failed" page and die.
-	if ( !empty($_POST) || wp_verify_nonce($_POST['post_or_edit_twordstore'],'twordstore_post_edit') )
-	{
+	if(!empty($_POST)){
+	
+		if($_POST['post_type']=="twordstore"){
 
-	   print 'Sorry, your nonce did verify.';
+			// if this fails, check_admin_referer() will automatically print a "failed" page and die.
+			if ( !empty($_POST) || wp_verify_nonce($_POST['post_or_edit_twordstore'],'twordstore_post_edit') )
+			{
+
+			   print 'Sorry, WordPress reports this security setting (for the Twordstore plugin) as not verifying.';
+			   
+			}
+		
+		}
+	
 	}
 
 }
 
-function twordstore_load_styles(){
+function twordstore_load_styles($styles){
 
-	?>
-	<link rel='stylesheet' href='<?PHP echo path_join(WP_PLUGIN_URL, basename( dirname( __FILE__ ) )."/css/twordstore_edit.css"); ?>' type='text/css' media='all' /> 
-	<?PHP
+	wp_enqueue_style("twordstore", plugins_url( "/css/twordstore_edit.css" , __FILE__ ) , null, null, "screen" );
+	
 }

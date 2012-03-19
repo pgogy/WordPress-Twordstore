@@ -8,7 +8,7 @@
 
 		Description: Makes WordPress Pages from Twitter
 
-		Version: 0.1
+		Version: 0.15
 
 		Author: Pgogy
 
