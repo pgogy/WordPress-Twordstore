@@ -19,6 +19,8 @@
 		
 		echo "<form><select id='twordstore_get_post' onChange='javascript:twordstore_editor_get_posts_tweets();'>";
 		
+		echo "<option>Select a twordstore</option>";
+		
 		while($post_data = array_shift($data)){
 		
 			echo "<option value='" . $post_data->post_id . "'>";
