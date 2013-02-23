@@ -25,6 +25,7 @@
 	require_once "twordstore_post.php";
 	require_once "twordstore_shortcodes.php";
 	require_once "twordstore_tweet_editor.php";
+	require_once "twordstore_management.php";
 
 	global $twordstore_db_version;
 	$twordstore_db_version = "1.0";
@@ -95,10 +96,6 @@
 	   
 	   if ( ! wp_next_scheduled( 'twordstore_cron_harvest' ) ) {
 		  wp_schedule_event( time(), 'hourly', 'twordstore_cron_harvest' );
-		  wp_schedule_event( time()+600, 'hourly', 'twordstore_cron_harvest' );
-		  wp_schedule_event( time()+1200, 'hourly', 'twordstore_cron_harvest' );
-		  wp_schedule_event( time()+1800, 'hourly', 'twordstore_cron_harvest' );
-		  wp_schedule_event( time()+2400, 'hourly', 'twordstore_cron_harvest' );
 		  wp_schedule_event( time()+3000, 'hourly', 'twordstore_cron_harvest' );
 	   }
 
