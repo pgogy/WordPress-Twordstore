@@ -3,15 +3,10 @@
 	/*
 
 		Plugin Name: twordstore
-
 		Plugin URI: http://www.pgogy.com/code/twordstore
-
 		Description: Makes WordPress Pages from Twitter
-
-		Version: 0.2
-
+		Version: 0.4
 		Author: Pgogy
-
 		Author URI: http://www.pgogy.com
 
 	*/
@@ -111,4 +106,3 @@
 	
 	}
 
-?>

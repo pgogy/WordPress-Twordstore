@@ -46,4 +46,3 @@ function twordstore_post_display($content){
 
 }
 
-?>

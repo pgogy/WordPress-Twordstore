@@ -158,4 +158,3 @@
 	
 	add_shortcode('twordstore_single_tweet_full', 'twordstore_shortcode_single_full' );
 
-?>

@@ -36,5 +36,3 @@
 		echo "<div id='twordstore_returned_tweets' style='height:400px; overflow:scroll; margin:10px 0'>Tweets will appear here</div>";
 	
 	}
-
-?>

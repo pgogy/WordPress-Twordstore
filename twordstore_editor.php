@@ -1,9 +1,7 @@
 <?PHP
 
 add_action("admin_menu", "twordstore_editor_make");
-
 add_action('save_post','twordstore_post');
-
 add_action('admin_init', 'twordstore_load_styles');
 
 function twordstore_editor_make()

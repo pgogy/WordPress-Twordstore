@@ -39,5 +39,3 @@
 	  register_post_type('twordstore',$args);
 
 	}
-
-?>
